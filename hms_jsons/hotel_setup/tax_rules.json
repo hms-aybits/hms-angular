@@ -1,0 +1,36 @@
+    "-LMIjphecx2d7yHyMEX5" : {
+      "data" : [ {
+        "cgst" : 5,
+        "gst" : "10",
+        "sgst" : 5,
+        "status" : "ACTIVE",
+        "tax_category" : "Booking",
+        "tax_lower_bound" : "0",
+        "tax_rule_id" : "TO_BE_GEN",
+        "tax_rule_name" : "TO_BE_GEN",
+        "tax_upper_bound" : "1000"
+      }, {
+        "cgst" : 7.5,
+        "gst" : "15",
+        "sgst" : 7.5,
+        "status" : "ACTIVE",
+        "tax_category" : "Booking",
+        "tax_lower_bound" : "2000",
+        "tax_rule_id" : "TO_BE_GEN",
+        "tax_rule_name" : "TO_BE_GEN",
+        "tax_upper_bound" : "5000"
+      }, {
+        "cgst" : 5,
+        "gst" : "10",
+        "sgst" : 5,
+        "status" : "ACTIVE",
+        "tax_category" : "Service",
+        "tax_lower_bound" : "0",
+        "tax_rule_id" : "TO_BE_GEN",
+        "tax_rule_name" : "TO_BE_GEN",
+        "tax_upper_bound" : "10000"
+      } ],
+      "entity" : "HOTEL_SETUP",
+      "operation" : "ADD_TAX_RULES",
+      "request_id" : "HMS_REQ"
+    },

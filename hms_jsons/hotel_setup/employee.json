@@ -1,0 +1,24 @@
+    "-LMIk5AHvcbiPdr2lbxy" : {
+      "data" : {
+        "contact_details" : {
+          "mobileNumber2" : "08050000511",
+          "mobile_number1" : "08050000511",
+          "primary_email" : "javatiddler@gmail.com",
+          "secondary_email" : "javatiddler@gmail.com"
+        },
+        "emp_full_name" : "Mohammed Sibgathulla",
+        "employee_address" : {
+          "address_line1" : "Thanisandra",
+          "city" : "Bangalore",
+          "country" : "India",
+          "state" : "Karnataka"
+        },
+        "login_attributes" : {
+          "login_id" : "mohammed@aybits",
+          "password" : "mohammed"
+        }
+      },
+      "entity" : "HOTEL_SETUP",
+      "operation" : "ADD_ADMIN",
+      "request_id" : "HMS_REQ"
+    }

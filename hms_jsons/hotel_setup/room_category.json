@@ -1,0 +1,30 @@
+    "-LMIjWTor4ObUvI-p7Ic" : {
+      "data" : [ {
+        "adult_occupancy" : "2",
+        "bed_count" : "2",
+        "category_room_count" : "10",
+        "child_occupancy" : "2",
+        "is_category_available" : true,
+        "room_category_capacity" : "4",
+        "room_category_desc" : "This is super deluxe",
+        "room_category_facilities" : [ "Swimming Pool" ],
+        "room_category_id" : "TO_BE_GEN",
+        "room_category_name" : "DELUXE",
+        "room_category_price" : "1000"
+      }, {
+        "adult_occupancy" : "3",
+        "bed_count" : "2",
+        "category_room_count" : "2",
+        "child_occupancy" : "2",
+        "is_category_available" : true,
+        "room_category_capacity" : "5",
+        "room_category_desc" : "This is super deluxe",
+        "room_category_facilities" : [ "Swimming Pool" ],
+        "room_category_id" : "TO_BE_GEN",
+        "room_category_name" : "SUPER_DELUXE",
+        "room_category_price" : "2000"
+      } ],
+      "entity" : "HOTEL_SETUP",
+      "operation" : "ADD_ROOM_CATEGORIES",
+      "request_id" : "HMS_REQ"
+    },

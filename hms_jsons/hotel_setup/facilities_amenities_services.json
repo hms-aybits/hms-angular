@@ -1,0 +1,34 @@
+    "-LMIigui4o_kmLpROMDH" : {
+      "data" : {
+        "amenities" : [ {
+          "amenity_charges" : "200",
+          "amenity_description" : "This is room level amenity",
+          "amenity_id" : "TO_BE_GEN",
+          "amenity_name" : "Breakfast",
+          "amenity_type" : "Room Amenity",
+          "is_available" : true,
+          "is_chargeable" : true
+        } ],
+        "facilities" : [ {
+          "facility_charges" : "100",
+          "facility_description" : "Any one can swim",
+          "facility_id" : "TO_BE_GEN",
+          "facility_name" : "Swimming Pool",
+          "facility_type" : "Hotel Facility",
+          "is_available" : true,
+          "is_chargeable" : true
+        } ],
+        "services" : [ {
+          "is_available" : true,
+          "is_chargeable" : true,
+          "service_charges" : "300",
+          "service_description" : "This is wallet car parking",
+          "service_id" : "TO_BE_GEN",
+          "service_name" : "Car Parking",
+          "service_type" : "Hotel Service"
+        } ]
+      },
+      "entity" : "HOTEL_SETUP",
+      "operation" : "ADD_COMFORTS",
+      "request_id" : "HMS_REQ"
+    },

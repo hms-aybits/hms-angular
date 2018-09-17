@@ -1,0 +1,145 @@
+<div class="m-content">
+    <div class="m-portlet m-portlet--tab" style="padding: 25px">
+        <div class="m-portlet__head" style="margin-bottom: 20px">
+            <div class="m-portlet__head-caption" style="height: 110px">
+                <h3 style="font-family: Roboto; font-weight: 500; color: #575962; margin-bottom: 10px;">Room Booking</h3>
+                <div class="row" style="margin-bottom: 10px;">
+                    <label class="col-form-label col-lg-1  col-sm-12">
+                        <strong>From</strong>
+                    </label>
+                    <div class="col-lg-5 col-md-9 col-sm-6">
+                        <div class="input-group date">
+                            <input class="form-control  m-input" placeholder="yyyy-mm-dd"
+                                   name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker"
+                                   [minDate]="model1"
+                                   [maxDate]="{year: 2048, month: 12, day: 31}"
+                                   [markDisabled]="isDisabled" (dateSelect)="fromDate($event)">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="d1.toggle()" type="button">
+                                    <i class="la la-calendar glyphicon-th"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="col-form-label col-lg-1  col-sm-12">
+                        <strong>To</strong>
+                    </label>
+                    <div class="col-lg-5 col-md-9 col-sm-6">
+                        <div class="input-group date">
+                            <input class="form-control  m-input" placeholder="yyyy-mm-dd"
+                                   name="dp2" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker"
+                                   [minDate]="model2"
+                                   [maxDate]="{year: 2048, month: 12, day: 31}"
+                                   [markDisabled]="isDisabled" (dateSelect)="toDate($event)">
+
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="d2.toggle()" type="button">
+                                    <i class="la la-calendar glyphicon-th"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 10px">
+            <label   style="float: left; margin-left: 10px; margin-right: 10px; padding-top: calc(.65rem + 1px);">
+                <strong>Filter By</strong>
+            </label>
+            <div class="row" style="margin-left: 10px; margin-right: 20px">
+                <div  style="float: left; margin-right: 10px">
+                    <!--            <select class="mt-multiselect btn btn-info btn-circle" multiple="multiple" data-width="20%" >
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>-->
+
+                    <p-multiSelect  [options]="categories" [(ngModel)]="selectedCategories"  defaultLabel="Category"  (onChange)="filterByCategory($event)"></p-multiSelect>
+                </div>
+                <div  style="float: left;">
+                    <p-multiSelect  [options]="roomStatus" [(ngModel)]="selectedRoomStatus"  defaultLabel="Room Status"  (onChange)="filterByStatus($event)"></p-multiSelect>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 10px">
+                <label  style="float: left;  margin-right: 10px; padding-top: calc(.65rem + 1px);">
+                    <strong>Sort By</strong>
+                </label>
+                <div class="dropdown" style="float: left;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Room Price
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button" (click)="sortRoomsAscPrice($event)">
+                            Low To High
+                        </button>
+                        <button class="dropdown-item" type="button" (click)="sortRoomsDescPrice($event)">
+                            High To Low
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+        <div>
+            <div *ngFor="let room of rooms"
+                 class="card"
+                 style="max-width: 8rem; min-height: 12rem; max-height: 12rem; float: left; margin-right: 8px; margin-bottom: 10px; background-color:#F5F5F5">
+                <div
+                        class="card-header"
+                        style="background-color:#e6e6e6; color:#808080; font-weight:bold;"
+
+                >ROOM {{room.roomNumber}}</div>
+                <div class="card-body text-success" style="padding: 0px">
+                    <ul style="list-style-type: none; margin: 0px; padding: 10px; color: #00a1af">
+                        <li> <i class="fa fa-inr"></i> {{room.roomPrice}}</li>
+                        <li>{{room.roomCategory}}</li>
+                    </ul>
+                </div>
+                <div class="card-footer"
+                     [ngStyle]="setFooterStyle(room)"
+                     [id]="room.roomNumber"
+                     (click)="selectedRooms($event)">{{room.roomStatus}}</div>
+            </div>
+
+        </div>
+
+
+
+        <!--        <div class="card text-white  mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Secondary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>-->
+
+        <div style="clear: left;"></div>
+        <button
+                class="btn btn-primary"
+                (click)="onSubmitBooking()">Book Now</button>
+
+
+    </div>
+</div>
+
+
+
+<!--
+<div class="m-content">
+    <div class="m-section__content">
+        <div class="m-demo" data-code-preview="true" data-code-html="true" data-code-js="false">
+            <div class="m-demo__preview m-demo__preview&#45;&#45;btn" style="background-color: white">
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+-->
+

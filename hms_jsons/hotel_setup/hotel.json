@@ -1,0 +1,46 @@
+{
+  "data" : {
+    "-LMIhOCp0_ss0nAWAkX3" : {
+      "data" : {
+        "hotel_attributes" : {
+          "hotel_address" : {
+            "address_line1" : "Thanisandra",
+            "city" : "Bangalore",
+            "country" : "India",
+            "state" : "Karnataka"
+          },
+          "hotel_bed_count" : "100",
+          "hotel_contact_details" : {
+            "fax_number" : "9999999999",
+            "mobile_number1" : "9999999999",
+            "primary_email" : "javatiddler@gmail.com",
+            "primary_phone" : "9999999999",
+            "secondary_email" : "javatiddler@gmail.com",
+            "secondary_phone" : "9999999999"
+          },
+          "hotel_employee_count" : "10",
+          "hotel_name" : "HOTEL_MOTEL",
+          "hotel_rating" : "10",
+          "hotel_room_count" : "10",
+          "hotel_room_doorno_format" : "RR"
+        },
+        "hotel_id" : "TO_BE_GEN",
+        "hotel_registration_data" : {
+          "building_permit_no" : "BPLI09",
+          "epf_reg_no" : "EPF099",
+          "esi_reg_no" : "ESI0909",
+          "fire_safety_permit_no" : "FS09",
+          "fssai_license_no" : "FFS099",
+          "gst_no" : "GST099",
+          "health_trade_license_no" : "HTL099",
+          "hotel_reg_no" : "RR0909",
+          "police_license_no" : "PSL0909"
+        },
+        "hotel_status" : "1"
+      },
+      "entity" : "HOTEL_SETUP",
+      "operation" : "ADD_HOTEL",
+      "request_id" : "HMS_REQ"
+    }
+  }
+}

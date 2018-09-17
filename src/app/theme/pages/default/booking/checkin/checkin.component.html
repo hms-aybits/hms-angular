@@ -1,0 +1,198 @@
+<!--<div class="m-subheader">
+    <div class="d-flex align-items-center">
+        <div class="mr-auto">
+            <h3 class="m-subheader__title m-subheader__title&#45;&#45;separator">
+                Customer Checkin
+            </h3>
+            <ul class="m-subheader__breadcrumbs m-nav m-nav&#45;&#45;inline">
+                <li class="m-nav__item m-nav__item&#45;&#45;home">
+                    <a href="#" class="m-nav__link m-nav__link&#45;&#45;icon">
+                        <i class="m-nav__link-icon la la-home"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+<!-- END: Subheader -->
+<div class="m-content">
+    <div class="m-portlet m-portlet--tab">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+						<span class="m-portlet__head-icon m--hide">
+							<i class="la la-gear"></i>
+						</span>
+                    <h3 class="m-portlet__head-text">
+                        Customer Checkin Form
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--begin::Form-->
+        <form [formGroup]="customerForm" (ngSubmit)="saveModel(customerForm.value, customerForm.valid)"  class="m-form m-form--label-align-left- m-form--state-" id="m_form_2">
+            <div class="m-portlet__body">
+                <div class="m-form__content">
+                    <div class="m-alert m-alert--icon alert alert-danger m--hide" role="alert" id="m_form_1_msg">
+                        <div class="m-alert__icon">
+                            <i class="la la-warning"></i>
+                        </div>
+                        <div class="m-alert__text">
+                            Oh snap! Change a few things up and try submitting again.
+                        </div>
+                        <div class="m-alert__close">
+                            <button type="button" class="close" data-close="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--begin: Form Wizard Step 1-->
+                <div class="m-wizard__form-step m-wizard__form-step--current" id="m_wizard_form_step_1">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2">
+                            <div class="m-form__section m-form__section--first">
+                                <div class="m-form__heading">
+                                    <h3 class="m-form__heading-title">
+                                        Checkin Details
+                                    </h3>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Booking Id:
+                                    </label>
+                                    <div class="col-xl-9 col-lg-9">
+                                        <input type="text" name="name" class="form-control m-input" placeholder="" value="Nick Stone"
+                                               formControlName="first_name">
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Name:
+                                    </label>
+                                    <div class="col-xl-9 col-lg-9" formGroupName="contact_details">
+                                        <input type="text" name="contact_details" class="form-control m-input" placeholder="" value="nick.stone@gmail.com"
+                                               formControlName="primary_email">
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Phone
+                                    </label>
+                                    <div class="col-xl-9 col-lg-9" formGroupName="contact_details">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+																<span class="input-group-text">
+																	<i class="la la-phone"></i>
+																</span>
+                                            </div>
+                                            <input type="text" name="phone" class="form-control m-input" placeholder="" value="1-541-754-3010"
+                                                   formControlName="primary_phone">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Adults:
+                                    </label>
+                                    <div class="col-lg-4 col-md-9 col-sm-12">
+                                        <select class="form-control m-input" name="option">
+                                            <option value="">
+                                                Select
+                                            </option>
+                                            <option>
+                                                1
+                                            </option>
+                                            <option>
+                                                2
+                                            </option>
+                                            <option>
+                                                3
+                                            </option>
+                                            <option>
+                                                4
+                                            </option>
+                                            <option>
+                                                5
+                                            </option>
+                                        </select>
+                                        <span class="m-form__help">
+							Please select an option.
+						</span>
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Children:
+                                    </label>
+                                    <div class="col-lg-4 col-md-9 col-sm-12">
+                                        <select class="form-control m-input"  required>
+                                            <option value="">
+                                                Select
+                                            </option>
+                                            <option>
+                                                1
+                                            </option>
+                                            <option>
+                                                2
+                                            </option>
+                                            <option>
+                                                3
+                                            </option>
+                                            <option>
+                                                4
+                                            </option>
+                                            <option>
+                                                5
+                                            </option>
+                                        </select>
+                                        <span class="m-form__help">
+							Please select an option.
+						</span>
+                                    </div>
+                                </div>
+                                <div class="form-group m-form__group row">
+                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                        * Advance Amount:
+                                    </label>
+                                    <div class="col-xl-9 col-lg-9">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+																<span class="input-group-text">
+																	<i class="la la-calculator"></i>
+																</span>
+                                            </div>
+                                        <input type="text" name="digits" class="form-control m-input" placeholder="Enter the advance amount" value="Nick Stone"
+                                               formControlName="first_name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="m-form__section">
+                                <div class="m-portlet__foot m-portlet__foot--fit">
+                                    <div class="m-form__actions">
+                                        <button type="submit" class="btn btn-accent">
+                                            Submit
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+        <!--end::Form-->
+
+        <!--end::Form-->
+    </div>
+    <!--end::Portlet-->
+</div>

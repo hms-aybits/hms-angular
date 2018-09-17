@@ -1,0 +1,1753 @@
+<div class="m-content" style="padding: 0">
+    <!--Begin::Main Portlet-->
+    <div class="m-portlet m-portlet--full-height">
+        <!--begin: Portlet Head-->
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+                        {{setupActivated}} Hotel Setup Wizard {{setupActivated ? '(activated)' : '(notactivated)'}}
+                        <small>
+
+                        </small>
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-toggle="m-tooltip" class="m-portlet__nav-link m-portlet__nav-link--icon" data-direction="left" data-width="auto" title="Get help with filling up this form">
+                            <i class="flaticon-info m--icon-font-size-lg3"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--end: Portlet Head-->     <!--begin: Form Wizard-->
+        <div class="m-wizard m-wizard--2 m-wizard--success" id="m_wizard">
+            <!--begin: Message container -->
+            <div class="m-portlet__padding-x">
+                <!-- Here you can put a message or alert -->
+            </div>
+            <!--end: Message container -->         <!--begin: Form Wizard Head -->
+            <div class="m-wizard__head m-portlet__padding-x">
+                <!--begin: Form Wizard Progress -->
+                <div class="m-wizard__progress">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!--end: Form Wizard Progress -->
+
+
+                <!--begin: Form Wizard Nav -->
+                <div class="m-wizard__nav">
+                    <div class="m-wizard__steps">
+                        <div class="m-wizard__step m-wizard__step--current"  m-wizard-target="m_wizard_form_step_1">
+                            <a href="#"  class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-placeholder"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    1. Hotel Information
+                                </div>
+                                <!--                                <div class="m-wizard__step-desc">
+                                                                    Lorem ipsum doler amet elit
+                                                                    <br>
+                                                                    sed eiusmod tempors
+                                                                </div>-->
+                            </div>
+                        </div>
+                        <div class="m-wizard__step m-wizard__step--current"  m-wizard-target="m_wizard_form_step_2">
+                            <a href="#"  class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-placeholder"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    2. Hotel Facilities
+                                </div>
+                                <!--                                <div class="m-wizard__step-desc">
+                                                                    Lorem ipsum doler amet elit
+                                                                    <br>
+                                                                    sed eiusmod tempors
+                                                                </div>-->
+                            </div>
+                        </div>
+                        <div class="m-wizard__step" m-wizard-target="m_wizard_form_step_3">
+                            <a href="#" class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-layers"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    2. Category Details
+                                </div>
+                                <!--                                <div class="m-wizard__step-desc">
+                                                                    Lorem ipsum doler amet elit
+                                                                    <br>
+                                                                    sed eiusmod tempors
+                                                                </div>-->
+                            </div>
+                        </div>
+
+                        <div class="m-wizard__step" m-wizard-target="m_wizard_form_step_4">
+                            <a href="#" class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-layers"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    3. TaxRules Details
+                                </div>
+                                <!--                                <div class="m-wizard__step-desc">
+                                                                    Lorem ipsum doler amet elit
+                                                                    <br>
+                                                                    sed eiusmod tempors
+                                                                </div>-->
+                            </div>
+                        </div>
+                        <div class="m-wizard__step" m-wizard-target="m_wizard_form_step_5">
+                            <a href="#" class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-layers"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    4. Admin Details
+                                </div>
+                                <!--                                <div class="m-wizard__step-desc">
+                                                                    Lorem ipsum doler amet elit
+                                                                    <br>
+                                                                    sed eiusmod tempors
+                                                                </div>-->
+                            </div>
+                        </div>
+                        <div class="m-wizard__step" m-wizard-target="m_wizard_form_step_6">
+                            <a href="#" class="m-wizard__step-number">
+								<span>
+									<i class="fa  flaticon-layers"></i>
+								</span>
+                            </a>
+                            <div class="m-wizard__step-info">
+                                <div class="m-wizard__step-title" style="font-size: 1rem;">
+                                    6. Preview
+                                </div>
+                                <!--                               <div class="m-wizard__step-desc">
+                                                                   Lorem ipsum doler amet elit
+                                                                   <br>
+                                                                   sed eiusmod tempors
+                                                               </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end: Form Wizard Nav -->
+            </div>
+            <!--end: Form Wizard Head -->           <!--begin: Form Wizard Form-->
+            <div class="m-wizard__form">
+                <!--                 1) Use m-form--label-align-left class to alight the form input lables to the right                 2) Use m-form--state class to highlight input control borders on form validation                 -->
+                <form class="m-form m-form--label-align-left- m-form--state-" id="m_form">
+                    <!--begin: Form Body -->
+                    <div class="m-portlet__body">
+
+
+                        <!--begin: Form Wizard Step 1-->
+                        <div class="m-wizard__form-step m-wizard__form-step--current" id="m_wizard_form_step_1" #mwizard_one>
+                            <div class="row">
+                                <div class="col-xl-11 offset-xl-1">
+                                    <div class="m-form__section">
+                                        <div class="m-form__heading">
+                                            <h3 class="m-form__heading-title">
+                                                Hotel Details
+                                            </h3>
+                                        </div>
+                                        <div class="form-group m-form__group row">
+                                            <label class="col-lg-2">
+                                                Hotel Name:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control m-input" name="hotelName" placeholder="" [(ngModel)]="hotel.hotel_attributes.hotel_name">
+                                            </div>
+                                            <label class="col-lg-2">
+                                                Hote Rating:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control m-input" placeholder="" name="hotelRating" [(ngModel)]="hotel.hotel_attributes.hotel_rating">
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-form__group row">
+                                            <label class="col-lg-2 col-form-label">
+                                                Room Count:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="text" class="form-control m-input" placeholder="" name="roomCount" [(ngModel)]="hotel.hotel_attributes.hotel_room_count">
+                                                </div>
+                                            </div>
+                                            <label class="col-lg-2">
+                                                Room Door Format:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="text" class="form-control m-input" placeholder="" name="roomDoorFormat" [(ngModel)]="hotel.hotel_attributes.hotel_room_doorno_format">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-form__group row">
+                                            <label class="col-lg-2">
+                                                Hotel Staff Count:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="text" class="form-control m-input" placeholder="" name="staffCount" [(ngModel)]="hotel.hotel_attributes.hotel_employee_count">
+                                                </div>
+                                            </div>
+                                            <label class="col-lg-2">
+                                                Total Beds:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="text" class="form-control m-input" placeholder="" name="totalBeds" [(ngModel)]="hotel.hotel_attributes.hotel_bed_count">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                        <div class="m-form__section">
+                                            <div class="m-form__heading">
+                                                <h3 class="m-form__heading-title">
+                                                    Contact Details
+
+                                                </h3>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Landline Number 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="landLine1" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.primary_phone">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Landline Number 2
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="landLine2" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.secondary_phone">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Fax Number
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="faxNo" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.fax_number">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Mobile Number
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="mobileNumber" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.mobile_number1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Email Address 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="email1" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.primary_email">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Email Address 2
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="email2" [(ngModel)]="hotel.hotel_attributes.hotel_contact_details.secondary_email">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                        <div class="m-form__section">
+                                            <div class="m-form__heading">
+                                                <h3 class="m-form__heading-title">
+                                                    Mailing Address
+
+                                                </h3>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Address Line 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="addressLine1" [(ngModel)]="hotel.hotel_attributes.hotel_address.address_line1">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    City
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="city" [(ngModel)]="hotel.hotel_attributes.hotel_address.city">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    State
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="state" [(ngModel)]="hotel.hotel_attributes.hotel_address.state">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Country
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="country" [(ngModel)]="hotel.hotel_attributes.hotel_address.country">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                        <div class="m-form__section">
+                                            <div class="m-form__heading">
+                                                <h3 class="m-form__heading-title">
+                                                    Hotel Certificates
+
+                                                </h3>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Registratrion No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="registrationNo" [(ngModel)]="hotel.hotel_registration_data.hotel_reg_no">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Building Permint No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="buildingPermitNumber" [(ngModel)]="hotel.hotel_registration_data.building_permit_no">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Fire Saftey No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="fireSafetyNumber" [(ngModel)]="hotel.hotel_registration_data.fire_safety_permit_no">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    Police License No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="policeLicenseNumber" [(ngModel)]="hotel.hotel_registration_data.police_license_no">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    Health Trade License No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="healthTradeLicenseNumber" [(ngModel)]="hotel.hotel_registration_data.health_trade_license_no">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2">
+                                                    FSSAI License No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="fssaiLicenseNumber" [(ngModel)]="hotel.hotel_registration_data.fssai_license_no">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    GST No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="gstNumber" [(ngModel)]="hotel.hotel_registration_data.gst_no">
+                                                    </div>
+                                                </div>
+
+                                                <label class="col-lg-2">
+                                                    ESI Reg No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="esiRegistrationNumber" [(ngModel)]="hotel.hotel_registration_data.esi_reg_no">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2">
+                                                    EPF Reg No
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="epfRegistrationNumber" [(ngModel)]="hotel.hotel_registration_data.epf_reg_no">
+                                                    </div>
+
+                                                </div>
+                                                <!--                              <label class="col-lg-2 col-form-label">
+                                                                                  ESI Reg No.
+                                                                              </label>
+                                                                              <div class="col-lg-3">
+                                                                                  <div class="m-input-icon m-input-icon&#45;&#45;right">
+                                                                                      <input type="text" class="form-control m-input" placeholder="">
+                                                                                  </div>
+                                                                              </div>-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--begin: Datatable -->
+
+                        </div>
+                        <!--end: Form Wizard Step 1-->
+
+                        <!--begin: Form Wizard Step 2-->
+                        <div class="m-wizard__form-step" id="m_wizard_form_step_2" #mwizard_two>
+                            <div class="m-form__heading">
+                                <h3 class="m-form__heading-title">
+                                    Facilities
+                                </h3>
+                            </div>
+                            <div class="row" >
+                                <p-table [columns]="selectedFacilityCols" [value]="facilities"
+                                         selectionMode="single" [(selection)]="selectedFacility"
+                                         (onRowSelect)="onFacilityRowSelect($event)" [paginator]="true" [rows]="15" [responsive]="true" [resizableColumns]="true">
+                                    <ng-template pTemplate="caption">
+                                        <div style="text-align:left">
+                                            <p-multiSelect [options]="facilityCols" [(ngModel)]="selectedFacilityCols" optionLabel="header"
+                                                           selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns" name="facilityHeader"></p-multiSelect>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th  *ngFor="let col of columns" pResizableColumn>
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                        <tr [pSelectableRow]="rowData">
+                                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" *ngFor="let col of columns" class="ui-resizable-column">
+                                                <span class="ui-column-title">{{col.header}}</span>
+                                                {{rowData[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="summary" let-rowData>
+                                        <div style="text-align:left">
+                                            <button type="button" pButton icon="fa fa-plus" (click)="showAddFacilityDialog()" label="Add">Add</button>
+                                        </div>
+                                    </ng-template>
+
+                                </p-table>
+
+
+                                <p-dialog header="Hotel Facilities" [(visible)]="displayFacilityDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="700">
+
+
+                                    <div class="ui-g ui-fluid" *ngIf="facility">
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="facilityName">Name</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="facilityName" [(ngModel)]="facility.facility_name " name="facility_name"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="facilityType">Type</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="facilityType" [(ngModel)]="facility.facility_type " name="facility_type"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="facilityDescription">Facility Description</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="facilityDescription" [(ngModel)]="facility.facility_description" name="facility_description"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="facilityPrice">Facility Price</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="facilityPrice" [(ngModel)]="facility.facility_charges" name="facility_price"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label>Chargable</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <p-toggleButton  name="isChargable" [(ngModel)]="facility.is_chargeable" [style]="{'width':'150px'}"></p-toggleButton>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <p-footer>
+                                        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+                                            <button type="button" pButton icon="fa fa-close" (click)="deleteFacility()" label="Delete">Delete</button>
+                                            <button type="button" pButton icon="fa fa-check" (click)="saveFacility()" label="Save">Save</button>
+                                        </div>
+                                    </p-footer>
+
+                                </p-dialog>
+
+                            </div>
+
+
+
+
+
+                            <div class="m-form__heading">
+                                <br><br>
+                                <h3 class="m-form__heading-title">
+                                    Amenities
+                                </h3>
+                            </div>
+                            <div class="row" >
+                                <p-table [columns]="selectedAmenityCols" [value]="amenities"
+                                         selectionMode="single" [(selection)]="selectedAmenity"
+                                         (onRowSelect)="onAmenityRowSelect($event)" [paginator]="true" [rows]="15" [responsive]="true" [resizableColumns]="true">
+                                    <ng-template pTemplate="caption">
+                                        <div style="text-align:left">
+                                            <p-multiSelect [options]="amenityCols" [(ngModel)]="selectedAmenityCols" optionLabel="header"
+                                                           selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns" name="amenityHeader"></p-multiSelect>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th  *ngFor="let col of columns" pResizableColumn>
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                        <tr [pSelectableRow]="rowData">
+                                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" *ngFor="let col of columns" class="ui-resizable-column">
+                                                <span class="ui-column-title">{{col.header}}</span>
+                                                {{rowData[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="summary" let-rowData>
+                                        <div style="text-align:left">
+                                            <button type="button" pButton icon="fa fa-plus" (click)="showAddAmenityDialog()" label="Add">Add</button>
+                                        </div>
+                                    </ng-template>
+
+                                </p-table>
+
+
+                                <p-dialog header="Hotel Amenities" [(visible)]="displayAmenityDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="700">
+
+
+                                    <div class="ui-g ui-fluid" *ngIf="amenity">
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="amenityName">Amenity Name</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="amenityName" [(ngModel)]="amenity.amenity_name " name="amenity_name"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="amenityType">Type</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="amenityType" [(ngModel)]="amenity.amenity_type " name="amenity_type"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="amenityDescription">Amenity Description</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="amenityDescription" [(ngModel)]="amenity.amenity_description" name="amenity_description"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="amenityPrice">Amenity Price</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="amenityPrice" [(ngModel)]="amenity.amenity_charges" name="amenity_price"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label>Chargable</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <p-toggleButton  name="isChargable" [(ngModel)]="amenity.is_chargeable" [style]="{'width':'150px'}"></p-toggleButton>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p-footer>
+                                        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+                                            <button type="button" pButton icon="fa fa-close" (click)="deleteAmenity()" label="Delete">Delete</button>
+                                            <button type="button" pButton icon="fa fa-check" (click)="saveAmenity()" label="Save">Save</button>
+                                        </div>
+                                    </p-footer>
+
+                                </p-dialog>
+
+
+                            </div>
+
+                            <div class="m-form__heading">
+                                <br><br>
+                                <h3 class="m-form__heading-title">
+                                    Services
+                                </h3>
+                            </div>
+                            <div class="row" >
+                                <p-table [columns]="selectedServiceCols" [value]="services"
+                                         selectionMode="single" [(selection)]="selectedService"
+                                         (onRowSelect)="onServiceRowSelect($event)" [paginator]="true" [rows]="15" [responsive]="true" [resizableColumns]="true">
+                                    <ng-template pTemplate="caption">
+                                        <div style="text-align:left">
+                                            <p-multiSelect [options]="serviceCols" [(ngModel)]="selectedServiceCols" optionLabel="header"
+                                                           selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns" name="serviceHeader"></p-multiSelect>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th  *ngFor="let col of columns" pResizableColumn>
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                        <tr [pSelectableRow]="rowData">
+                                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" *ngFor="let col of columns" class="ui-resizable-column">
+                                                <span class="ui-column-title">{{col.header}}</span>
+                                                {{rowData[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="summary" let-rowData>
+                                        <div style="text-align:left">
+                                            <button type="button" pButton icon="fa fa-plus" (click)="showAddServiceDialog()" label="Add">Add</button>
+                                        </div>
+                                    </ng-template>
+
+                                </p-table>
+
+
+                                <p-dialog header="Hotel Services" [(visible)]="displayServiceDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="700">
+
+
+                                    <div class="ui-g ui-fluid" *ngIf="service">
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="serviceName">Service Name</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="serviceName" [(ngModel)]="service.service_name " name="service_name"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="serviceType">Type</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="serviceType" [(ngModel)]="service.service_type " name="service_type"  />
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="serviceDescription">Service Description</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="serviceDescription" [(ngModel)]="service.service_description" name="service_description"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="servicePrice">Service Price</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="servicePrice" [(ngModel)]="service.service_charges" name="service_price"  />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label>Chargable</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <p-toggleButton  name="isChargable" [(ngModel)]="service.is_chargeable" [style]="{'width':'150px'}"></p-toggleButton>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p-footer>
+                                        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+                                            <button type="button" pButton icon="fa fa-close" (click)="deleteService()" label="Delete">Delete</button>
+                                            <button type="button" pButton icon="fa fa-check" (click)="saveService()" label="Save">Save</button>
+                                        </div>
+                                    </p-footer>
+
+                                </p-dialog>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- END EXAMPLE TABLE PORTLET-->
+
+
+                        <!--end: Form Wizard Step 2-->
+
+
+
+
+                        <!--begin: Form Wizard Step 3-->
+                        <div class="m-wizard__form-step" id="m_wizard_form_step_3" #mwizard_three>
+                            <div class="m-form__heading">
+                                <h3 class="m-form__heading-title">
+                                    Hotel Room Categories
+                                </h3>
+                            </div>
+                            <div class="row" >
+                                <p-table [columns]="selectedCategoryCols" [value]="categories"
+                                         selectionMode="single" [(selection)]="selectedCategory"
+                                         (onRowSelect)="onCategoryRowSelect($event)" [paginator]="true" [rows]="15" [responsive]="true" [resizableColumns]="true">
+                                    <ng-template pTemplate="caption">
+                                        <div style="text-align:left">
+                                            <p-multiSelect [options]="categoryCols" [(ngModel)]="selectedCategoryCols" optionLabel="header"
+                                                           selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns" name="categoryHeader"></p-multiSelect>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th  *ngFor="let col of columns" pResizableColumn>
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                        <tr [pSelectableRow]="rowData">
+                                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" *ngFor="let col of columns" class="ui-resizable-column">
+                                                <span class="ui-column-title">{{col.header}}</span>
+                                                {{rowData[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="summary" let-rowData>
+                                        <div style="text-align:left">
+                                            <button type="button" pButton icon="fa fa-plus" (click)="showCategoryDialogToAdd()" label="Add">Add</button>
+                                        </div>
+                                    </ng-template>
+
+                                </p-table>
+
+                                <p-dialog header="Room Category Details" [(visible)]="displayCategoryDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="700">
+                                    <div class="ui-g ui-fluid" *ngIf="category">
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryName">Category</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="categoryName" [(ngModel)]="category.room_category_name" name="categoryName"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryDescription">Description</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="categoryDescription" [(ngModel)]="category.room_category_desc" name="categoryDescription" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryPrice">Price</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="categoryPrice" [(ngModel)]="category.room_category_price" name="categoryPrice" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryCapacity">Capacity</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="categoryCapacity" [(ngModel)]="category.room_category_capacity" name="categoryCapacity"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="adultCapacity">Adults</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="adultCapacity" [(ngModel)]="category.adult_occupancy" name="adultCapacity"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="childCapacity">Children</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="childCapacity" [(ngModel)]="category.child_occupancy" name="childCapacity" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="bedCount">Total Beds</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="bedCount" [(ngModel)]="category.bed_count" name="bedCount" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryRooms">Total Rooms</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="categoryRooms" [(ngModel)]="category.category_room_count" name="categoryRooms"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="amenities">Facilities</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                            <select multiple=" " class="m-input" id="amenities" [(ngModel)]="category.room_category_facilities" name="a_facilities">
+                                                <option *ngFor="let fac of facilities">
+                                                    {{fac.facility_name}}
+                                                </option>
+                                            </select>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <p-footer>
+                                        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+                                            <button type="button" pButton icon="fa fa-close" (click)="deleteCategory()" label="Delete">Delete</button>
+                                            <button type="button" pButton icon="fa fa-check" (click)="saveCategory()" label="Save">Save</button>
+                                        </div>
+                                    </p-footer>
+                                </p-dialog>
+                            </div>
+
+                        </div>
+
+
+                        <!-- END EXAMPLE TABLE PORTLET-->
+
+
+                        <!--end: Form Wizard Step 2-->
+
+                        <!--begin: Form Wizard Step 3 TaxRules Form-->
+
+                        <div class="m-wizard__form-step" id="m_wizard_form_step_4" #mwizard_four>
+                            <div class="m-form__heading">
+                                <h3 class="m-form__heading-title">
+                                    Hotel TaxRules Rules
+                                </h3>
+                            </div>
+                            <div class="row" >
+                                <p-table [columns]="selectedTaxCols" [value]="taxRules"
+                                         selectionMode="single" [(selection)]="selectedTax"
+                                         (onRowSelect)="onTaxRowSelect($event)" [paginator]="true" [rows]="15" [responsive]="true" [resizableColumns]="true">
+                                    <ng-template pTemplate="caption">
+                                        <div style="text-align:left">
+                                            <p-multiSelect [options]="taxCols" [(ngModel)]="selectedTaxCols" optionLabel="header"
+                                                           selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns" name="taxHeader"></p-multiSelect>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th  *ngFor="let col of columns" pResizableColumn>
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                        <tr [pSelectableRow]="rowData">
+                                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" *ngFor="let col of columns" class="ui-resizable-column">
+                                                <span class="ui-column-title">{{col.header}}</span>
+                                                {{rowData[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="summary" let-rowData>
+                                        <div style="text-align:left">
+                                            <button type="button" pButton icon="fa fa-plus" (click)="showAddTaxRuleDialog()" label="Add">Add</button>
+                                        </div>
+                                    </ng-template>
+
+                                </p-table>
+
+                                <p-dialog header="Room Category Details" [(visible)]="displayTaxDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="700">
+                                    <div class="ui-g ui-fluid" *ngIf="taxRule">
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryName">TaxRules Category</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="taxCategory" [(ngModel)]="taxRule.tax_category" name="categoryName"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryDescription">GST</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="gst" [(ngModel)]="taxRule.gst" name="gst" (input)="divideGST()" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryPrice">CGST</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="cgst" [(ngModel)]="taxRule.cgst" name="cgst" />
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="categoryCapacity">SGST</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="sgst" [(ngModel)]="taxRule.sgst" name="sgst"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="adultCapacity">Lower Bound</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12" #inputLowerBound>
+                                                <input pInputText id="lowerBound" [(ngModel)]="taxRule.tax_lower_bound" name="lowerBound"/>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="childCapacity">Upper Bound</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="upperBound" [(ngModel)]="taxRule.tax_upper_bound" name="upperBound" />
+                                            </div>
+                                        </div>
+<!--                                        <div class="ui-g-6 ui-sm-12">
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <label for="bedCount">Status</label>
+                                            </div>
+                                            <div class="ui-g-3 ui-sm-12">
+                                                <input pInputText id="status" [(ngModel)]="taxRule.status" name="status" />
+                                            </div>
+                                        </div>-->
+
+
+                                    </div>
+                                    <p-footer>
+                                        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+                                            <button type="button" pButton icon="fa fa-close" (click)="deleteTaxRule()" label="Delete">Delete</button>
+                                            <button type="button" pButton icon="fa fa-check" (click)="addTaxRuleToTable()" label="Save">Save</button>
+                                        </div>
+                                    </p-footer>
+                                </p-dialog>
+                            </div>
+
+                        </div>
+
+                        <!--end: Form Wizard Step 3-->
+
+
+
+
+
+                        <!--begin: Form Wizard Step 4-->
+                        <div class="m-wizard__form-step" id="m_wizard_form_step_5" #mwizard_five>
+                            <div class="row">
+                                <div class="col-xl-11 offset-xl-1">
+                                    <div class="m-form__section m-form__section--first">
+                                        <div class="m-form__heading">
+                                            <h3 class="m-form__heading-title">
+                                                Admin Details
+                                            </h3>
+                                        </div>
+
+                                        <div class="form-group m-form__group row">
+                                            <label class="col-lg-2 col-form-label">
+                                                Admin Name:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control m-input" placeholder="" name="fullName" [(ngModel)]="employee.emp_full_name">
+                                            </div>
+                                            <label class="col-lg-2 col-form-label">
+                                                Username:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <input type="text" class="form-control m-input" placeholder="" name="userName" [(ngModel)]="employee.login_attributes.login_id">
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-form__group row">
+                                            <label class="col-lg-2 col-form-label">
+                                                Password:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="password" class="form-control m-input" placeholder="" name="password" [(ngModel)]="employee.login_attributes.password">
+                                                </div>
+                                            </div>
+                                            <label class="col-lg-2 col-form-label">
+                                                Confirm Password:
+                                            </label>
+                                            <div class="col-lg-3">
+                                                <div class="m-input-icon m-input-icon--right">
+                                                    <input type="password" class="form-control m-input" placeholder="" name="confirmPassword" [(ngModel)]="employee.login_attributes.password">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                        <div class="m-form__section">
+                                            <div class="m-form__heading">
+                                                <h3 class="m-form__heading-title">
+                                                    Contact Details
+
+                                                </h3>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2 col-form-label">
+                                                    Mob. Number 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="mobileNumber1" [(ngModel)]="employee.contact_details.mobile_number1">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2 col-form-label">
+                                                    Mob. Number 2
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="mobileNumber2" [(ngModel)]="employee.contact_details.mobileNumber2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2 col-form-label">
+                                                    Email Address 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="email1" [(ngModel)]="employee.contact_details.primary_email">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2 col-form-label">
+                                                    Email Address 2
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="email2" [(ngModel)]="employee.contact_details.secondary_email">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                        <div class="m-form__section">
+                                            <div class="m-form__heading">
+                                                <h3 class="m-form__heading-title">
+                                                    Mailing Address
+
+                                                </h3>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2 col-form-label">
+                                                    Address Line 1
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="addressLine1" [(ngModel)]="employee.employee_address.address_line1">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2 col-form-label">
+                                                    City
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="city" [(ngModel)]="employee.employee_address.city">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row">
+                                                <label class="col-lg-2 col-form-label">
+                                                    State
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="state" [(ngModel)]="employee.employee_address.state">
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2 col-form-label">
+                                                    Country
+                                                </label>
+                                                <div class="col-lg-3">
+                                                    <div class="m-input-icon m-input-icon--right">
+                                                        <input type="text" class="form-control m-input" placeholder="" name="country" [(ngModel)]="employee.employee_address.country">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Form Wizard Step 4-->
+
+
+
+
+
+                        <!--begin: Form Wizard Step 5-->
+
+                        <div class="m-wizard__form-step" id="m_wizard_form_step_6" #mwizard_six>
+                            <div class="row">
+                                <div class="col-xl-8 offset-xl-2">
+                                    <!--begin::Section-->
+                                    <ul class="nav nav-tabs m-tabs-line--2x m-tabs-line m-tabs-line--danger" role="tablist">
+                                        <li class="nav-item m-tabs__item">
+                                            <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_form_confirm_1" role="tab">
+                                                1. Hotel Information
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-tabs__item">
+                                            <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_form_confirm_2" role="tab">
+                                                2. Category Details
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-tabs__item">
+                                            <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_form_confirm_3" role="tab">
+                                                3. TaxRules Details
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-tabs__item">
+                                            <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_form_confirm_4" role="tab">
+                                                4. Admin Details
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content m--margin-top-40">
+                                        <div class="tab-pane active" id="m_form_confirm_1" role="tabpanel">
+                                            <div class="m-form__section m-form__section--first">
+                                                <div class="m-form__heading">
+                                                    <h4 class="m-form__heading-title">
+                                                        Hotel Information
+                                                    </h4>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Hotel Name:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.hotelName}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Rating:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.hotelRating}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Room Count:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.roomCount}}
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                            <div class="m-form__section">
+                                                <div class="m-form__heading">
+                                                    <h4 class="m-form__heading-title">
+                                                        Contact Details
+
+                                                    </h4>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Land Line 1:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.landLine1}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Land Line 2:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.landLine2}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Fax Number:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.faxNo}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Mobile Number:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.mobileNumber}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Email Address 1:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.email1}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Email Address 2:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.email2}}
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                            <div class="m-form__section">
+                                                <div class="m-form__heading">
+                                                    <h4 class="m-form__heading-title">
+                                                        Corresponding Address
+
+                                                    </h4>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Address Line 1:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.addressLine1}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        City:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.city}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        State:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.state}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Country:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{hotel.country}}
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="m_form_confirm_2" role="tabpanel">
+                                            <div class="m-form__section m-form__section--first"  *ngFor="let category of categories">
+                                                <div class="m-form__heading">
+                                                    <h4 class="m-form__heading-title">
+                                                        {{category.categoryName}}
+                                                    </h4>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Category Name:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.categoryName}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Category Description:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.categoryDescription}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Category Price:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.categoryPrice}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Category Capacity:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.categoryCapacity}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Adult Capacity:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.adultCapacity}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Child Capacity:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.childCapacity}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Bed Count:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.bedCount}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group m-form__group m-form__group--sm row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">
+                                                        Category Rooms:
+                                                    </label>
+                                                    <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.categoryRooms}}
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h4 class="m-form__heading-title">
+                                                            Facilities
+                                                        </h4>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{category.facilities}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane" id="m_form_confirm_3" role="tabpanel">
+                                            <div class="m-form__section m-form__section--first" *ngFor="let tax of taxRules">
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h4 class="m-form__heading-title">
+                                                            TaxRules Details                                                        </h4>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            TaxRules For:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.tax_category}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            GST:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.gst}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            CGST:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.cgst}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            SGST:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.sgst}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Lower Bound:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.tax_lower_bound}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Upper Bound:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{tax.tax_upper_bound}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="m_form_confirm_4" role="tabpanel">
+                                            <div class="m-form__section m-form__section--first">
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h4 class="m-form__heading-title">
+                                                            Admin Details
+                                                        </h4>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Admin Name:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{employee.fullName}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Username:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{employee.userName}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Password:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{employee.password}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Confirm Password:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+															<span class="m-form__control-static">
+																{{employee.confirmPassword}}
+															</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h4 class="m-form__heading-title">
+                                                            Contact Details
+
+                                                        </h4>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Mobile Number 1:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.mobileNumber1}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Mobile Number 2:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.mobileNumber2}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Email Address 1:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.email1}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Email Address 2:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.email2}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h4 class="m-form__heading-title">
+                                                            Mailing Address
+
+                                                        </h4>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Address Line 1:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.addressLine1}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            City:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.city}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            State:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.state}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group m-form__group--sm row">
+                                                        <label class="col-xl-3 col-lg-3 col-form-label">
+                                                            Country:
+                                                        </label>
+                                                        <div class="col-xl-9 col-lg-9">
+														<span class="m-form__control-static">
+															{{employee.country}}
+														</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end::Section-->                                 <!--end::Section-->
+                                    <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                    <div class="form-group m-form__group m-form__group--sm row">
+                                        <div class="col-xl-12">
+                                            <div class="m-checkbox-inline">
+                                                <label class="m-checkbox m-checkbox--solid m-checkbox--brand">
+                                                    <input type="checkbox" name="accept" value="1">
+                                                    Click here to indicate that you have read and agree to the terms presented in the Terms and Conditions agreement
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Form Wizard Step 5-->
+
+                    </div>
+                    <!--end: Form Body -->                 <!--begin: Form Actions -->
+                    <div class="m-portlet__foot m-portlet__foot--fit m--margin-top-40">
+                        <div class="m-form__actions">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-4 m--align-left">
+                                    <a href="#" class="btn btn-secondary m-btn m-btn--custom m-btn--icon" data-wizard-action="prev">
+										<span>
+											<i class="la la-arrow-left"></i>
+											&nbsp;&nbsp;
+											<span>
+												Back
+											</span>
+										</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 m--align-right">
+                                    <a href="#" class="btn btn-primary m-btn m-btn--custom m-btn--icon" data-wizard-action="submit" (click)="onFinish()">
+										<span>
+											<i class="la la-check"></i>
+											&nbsp;&nbsp;
+											<span>
+												Submit
+											</span>
+										</span>
+                                    </a>
+                                    <a href="#" class="btn btn-warning m-btn m-btn--custom m-btn--icon" data-wizard-action="next" (click)="onSubmit()">
+										<span>
+											<span>
+												Save & Continue
+											</span>
+											&nbsp;&nbsp;
+											<i class="la la-arrow-right"></i>
+										</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end: Form Actions -->
+                </form>
+            </div>
+            <!--end: Form Wizard Form-->
+        </div>
+        <!--end: Form Wizard-->
+    </div>
+    <!--End::Main Portlet-->
+</div>
